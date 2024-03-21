@@ -11,12 +11,12 @@ const router = express_1.default.Router();
 /* Google Authentication */
 router.get('/google', passport_1.default.authenticate('google', { scope: ['profile', 'email'] }));
 router.get('/google/callback', passport_1.default.authenticate('google', { failureRedirect: '/' }), (req, res) => {
-    res.redirect('/_health');
+    res.redirect('/success');
 });
 /* Twitter Authentication */
 router.get('/twitter', passport_1.default.authenticate('twitter'));
 router.get('/twitter/callback', passport_1.default.authenticate('google', { failureRedirect: '/' }), (req, res) => {
-    res.redirect('/_health');
+    res.redirect('/success');
 });
 /* Logout Session */
 router.get('/logout', (req, res) => {

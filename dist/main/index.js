@@ -16,15 +16,13 @@ require("module-alias/register");
 const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 const app_1 = __importDefault(require("@voosh/main/app"));
-const config_1 = require("@voosh/main/config");
 const http_1 = __importDefault(require("http"));
-const winston_1 = __importDefault(require("@voosh/lib/winston"));
 const prisma_1 = __importDefault(require("@voosh/lib/prisma"));
 const server = http_1.default.createServer(app_1.default);
 const start = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         yield prisma_1.default.$connect();
-        server.listen(config_1.PORT, () => winston_1.default.info(`Server is running on port http://localhost:${config_1.PORT}...`));
+        server.listen(8080, () => console.log(`Server is running on port http://localhost:${8080}...`));
     }
     catch (error) {
         throw new Error("Unable to connect to db");

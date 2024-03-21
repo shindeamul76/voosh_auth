@@ -50,6 +50,9 @@ app.use('/api/v1', user_1.default);
 app.get('/', (req, res) => {
     res.status(200).json({ message: 'Enhanced Authentication API!' });
 });
+app.get('/success', (req, res) => {
+    res.status(200).json({ message: 'Loggged In Successfully' });
+});
 app.get('/_health', (req, res) => {
     return res.status(200).json({
         uptime: process.uptime(),

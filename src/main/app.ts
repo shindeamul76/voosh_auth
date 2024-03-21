@@ -38,6 +38,10 @@ app.get('/', (req: Request, res: Response) => {
   res.status(200).json({ message: 'Enhanced Authentication API!' });
 });
 
+app.get('/success', (req: Request, res: Response) => {
+  res.status(200).json({ message: 'Loggged In Successfully' });
+});
+
 app.get('/_health', (req: Request, res: Response) => {
   return res.status(200).json({
     uptime: process.uptime(),
