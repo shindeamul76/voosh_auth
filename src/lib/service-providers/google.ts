@@ -19,7 +19,7 @@ passport.deserializeUser(function (user: User, done) {
 passport.use(new GoogleStrategy({
     clientID: GOOGLE_CLIENT_ID,
     clientSecret: GOOGLE_CLIENT_SECRET,
-    callbackURL: "http://localhost:8080/auth/google/callback",
+    callbackURL: "https://voosh-auth.onrender.com/auth/google/callback",
     passReqToCallback: true
 },
 

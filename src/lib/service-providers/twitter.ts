@@ -16,9 +16,9 @@ passport.deserializeUser(function (user: User, done) {
 });
 
 passport.use(new TwitterStrategy({
-    consumerKey: "zwfGjILS0DVbQ5IDfkejxB5Pv",
-    consumerSecret: "9yHoaG733GPpb3iEVdueFREB0tDNGNCPTkKBjNV066OweELZav",
-    callbackURL: "http://localhost:8080/auth/twitter/callback",
+    consumerKey: TWITTER_CLIENT_ID,
+    consumerSecret: TWITTER_CLIENT_SECRET,
+    callbackURL: "https://voosh-auth.onrender.com/auth/twitter/callback",
     passReqToCallback: true
 },
     async function (request, accessToken, refreshToken, profile, done) {
