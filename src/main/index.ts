@@ -16,7 +16,7 @@ const start = async (): Promise<void> => {
   try {
 
     await prisma.$connect();
-    server.listen(PORT, () => logger.info(`Server is running on port http://localhost:${PORT}...`));
+    server.listen(8080, () => console.log(`Server is running on port http://localhost:${8080}...`));
 
   } catch (error: any) {
     throw new Error("Unable to connect to db")
