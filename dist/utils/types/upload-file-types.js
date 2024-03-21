@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.FILE_NOT_FOUND = exports.INVALID_ID = exports.FILE_FETCHED_SUCCESSFULLY = exports.FILE_DELETED_SUCCESSFULLY = exports.FILE_UPLOADED_SUCCESSFULLY = exports.NO_FILE_PROVIDED = exports.FILE_UPLOADED = void 0;
+exports.FILE_UPLOADED = "File Uploaded Successfully";
+exports.NO_FILE_PROVIDED = "No File Provided";
+exports.FILE_UPLOADED_SUCCESSFULLY = "File Uploaded Successfully";
+exports.FILE_DELETED_SUCCESSFULLY = "Files Deleted Successfully";
+exports.FILE_FETCHED_SUCCESSFULLY = "Files Fetched Successfully";
+exports.INVALID_ID = "Invalid or Missing User ID";
+exports.FILE_NOT_FOUND = "File Not Found";

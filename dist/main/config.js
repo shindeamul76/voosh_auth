@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AWS_SCRETE_ACCESS_KEY = exports.AWS_ACCESS_KEY = exports.AWS_S3_BUCKET = exports.TWITTER_CLIENT_SECRET = exports.TWITTER_CLIENT_ID = exports.GOOGLE_CLIENT_SECRET = exports.GOOGLE_CLIENT_ID = exports.PORT = void 0;
+exports.PORT = process.env.PORT || 8080;
+exports.GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID || '';
+exports.GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET || '';
+exports.TWITTER_CLIENT_ID = process.env.TWITTER_CLIENT_ID || '';
+exports.TWITTER_CLIENT_SECRET = process.env.TWITTER_CLIENT_SECRET || '';
+exports.AWS_S3_BUCKET = process.env.AWS_S3_BUCKET || '';
+exports.AWS_ACCESS_KEY = process.env.AWS_ACCESS_KEY || '';
+exports.AWS_SCRETE_ACCESS_KEY = process.env.AWS_SCRETE_ACCESS_KEY || '';
